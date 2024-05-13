@@ -1,3 +1,0 @@
-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
-
-for otus-linux-vagrant only
