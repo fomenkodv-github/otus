@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
     ct.vm.hostname = "centos8-nested.vagrant"
     ct.ssh.insert_key = false
     #ct.vm.define "vbox-centos8-nested"
-    ct.vm.disk :disk, size: "20GB", primary: true
+    #ct.vm.disk :disk, size: "20GB", primary: true
     ct.vm.synced_folder "/tmp/vagrant/machine1", "/home/vagrant/machine1", SharedFoldersEnableSymlinksCreate: false #, type: "smb"
     ct.vm.provider "virtualbox" do |vb|
       vb.memory = 4096
