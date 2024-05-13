@@ -1,3 +1,2 @@
-# otus-linux-vagrant
-version 1.0
-Vagrantfile
+version 1.1
+Занятие 1. Vagrant-стенд для обновления ядра и создания образа системы

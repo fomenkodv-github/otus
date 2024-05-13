@@ -1,0 +1,1 @@
+{"smb":{"/vagrant":{"type":"smb","guestpath":"/vagrant","hostpath":"C:/LEARN/OTUS/linux/Vagrant","disabled":false,"__vagrantfile":true,"smb_username":"DIMAS","smb_id":"vgt-cb18520968c68ea473e8c5072ccd432f-6ad5fdbcbf2eaa93bd62f92333a2e6e5","smb_host":"10.200.0.6","owner":"vagrant","group":"vagrant"}}}

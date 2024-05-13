@@ -22,8 +22,8 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/home/vagrant/vagrant" #, type: "smb"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = 4096
-    vb.cpus = 2
+    vb.memory = 16000
+    vb.cpus = 4
     vb.name = "vbox-ubt1-jammy64"
   
   #shell inline provision

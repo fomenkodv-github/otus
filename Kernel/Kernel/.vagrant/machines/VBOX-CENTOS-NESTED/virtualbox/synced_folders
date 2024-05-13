@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/machine1":{"SharedFoldersEnableSymlinksCreate":false,"guestpath":"/home/vagrant/machine1","hostpath":"/tmp/vagrant/machine1","disabled":false,"__vagrantfile":true}}}
