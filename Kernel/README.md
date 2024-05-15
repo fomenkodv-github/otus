@@ -20,4 +20,22 @@ version 1.1
     - Запущена внутренняя nested VM centos8
 
 
-Обновлено ядро linux Centos из репозитория  
+Обновлено ядро linux Centos из репозитория:
+
+  - проверена текущая версия ядра:
+
+    [vagrant@centos8-nested ~]$ uname -r
+     4.18.0-532.el8.x86_64
+  
+  - подключен elrepo репозиторий:
+
+  [vagrant@centos8-nested ~]$ sudo yum install -y https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm
+
+  - установлено ядро из свежей и стабильной ветки kernel-ml:
+
+   [vagrant@centos8-nested ~]$ sudo yum --enablerepo elrepo-kernel install kernel-ml -y
+
+  - перезагрузка с новым ядром:
+
+   [vagrant@centos8-nested ~]$ uname -r
+    6.8.9-1.el8.elrepo.x86_64
