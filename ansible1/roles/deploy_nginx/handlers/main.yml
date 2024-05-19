@@ -1,0 +1,11 @@
+---
+# handlers file for deploy_nginx
+
+        - name: restart nginx
+          ansible.builtin.service: name=nginx state=restarted
+
+        - name: reload nginx
+          ansible.builtin.service: name=nginx state=reloaded
+
+        - name: restart firewalld
+          ansible.builtin.service: name=firewalld state=restarted  

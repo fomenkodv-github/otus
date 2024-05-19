@@ -1,0 +1,21 @@
+
+[prod_h1]
+h1 ansible_host=10.10.10.11 ansible_ssh_pass=xdgt
+
+[prod_h2]
+h2 ansible_host=10.10.10.12 ansible_ssh_private_key_file=/home/vagrant/ansible/h2.key.pem
+
+[prod_h3]
+h3 ansible_host=10.10.10.13  ansible_ssh_private_key_file=/home/vagrant/ansible/h3.key.pem
+
+[produbt:children]
+prod_h1
+prod_h2
+
+[prodcnt:children]
+prod_h3
+
+[prodall:children]
+prod_h1
+prod_h2
+prod_h3

@@ -1,0 +1,6 @@
+---
+# vars file for deploy_nginx
+
+    nginx_listen_port:  8080
+    jinja2_src_dir: /home/vagrant/ansible
+    nginx_cfg_dir: /etc/nginx
