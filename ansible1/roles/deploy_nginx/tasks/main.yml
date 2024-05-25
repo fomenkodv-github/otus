@@ -10,10 +10,8 @@
 
 - name: NGINX Install
   ansible.builtin.package: name=nginx state=latest 
-  notify:
-   - restart nginx
-  tags:
-   - nginx-package
+  notify: restart nginx
+  tags: nginx-package
 
 - name: NGINX Service
   ansible.builtin.service: name=nginx state=started enabled=yes
@@ -23,10 +21,8 @@
    src: nginx.conf.j2
    dest: "{{ nginx_cfg_dir }}/nginx.conf"
    mode: 0555
-  notify: 
-   - reload nginx
-  tags:
-   -nginx-configuration
+  notify: reload nginx
+  tags: nginx-configuration
 
 - name: NGINX Firewall oprts
   ansible.posix.firewalld:

@@ -1,7 +1,9 @@
 ---
 
- - name: NGINX Install and Configure
-   hosts: all
-   become: True
-   any_errors_fatal: True
+- name: NGINX Install and Configure
+  hosts: all
+  become: True
+  any_errors_fatal: True
 
+  roles:
+   - { role: deploy_nginx, when: ansible_system == 'Linux' }
